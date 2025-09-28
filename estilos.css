@@ -1,0 +1,23 @@
+
+:root{--blue:#1877f2;--bg:#f0f2f5;--card:#fff;--muted:#606770}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#1d1f23}
+.header{background:var(--blue);color:white;padding:10px 16px;display:flex;align-items:center;gap:12px;position:sticky;top:0;z-index:10}
+.header .brand{display:flex;align-items:center;gap:10px}
+.header img{width:48px;height:48px;border-radius:6px;object-fit:cover}
+.header h1{margin:0;font-size:18px}
+.header nav{margin-left:20px}
+.header nav a{color:white;text-decoration:none;margin-right:12px;font-weight:600}
+.container{max-width:1000px;margin:20px auto;padding:0 12px}
+.layout{display:grid;grid-template-columns:300px 1fr 300px;gap:16px}
+.card{background:var(--card);padding:12px;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,0.06)}
+.profile-photo{width:100%;border-radius:8px;object-fit:cover}
+.post{margin-bottom:12px;padding:12px;border-radius:8px;background:var(--card)}
+.post .meta{display:flex;gap:8px;align-items:center}
+.post img.avatar{width:40px;height:40px;border-radius:50%;object-fit:cover}
+.post img.content-img{width:100%;border-radius:8px;margin-top:8px}
+.footer{margin-top:20px;text-align:center;color:var(--muted);font-size:14px;padding:12px}
+.aside-list{list-style:none;padding:0;margin:0}
+.aside-list li{padding:6px 0;border-bottom:1px solid #eef0f2}
+.table-responsive{overflow:auto}
+@media(max-width:980px){.layout{grid-template-columns:1fr;}.header nav{display:none}}
